@@ -1,1 +1,22 @@
 node_modules
+
+# As the readme discusses the idea of using Typescript (tsc) to compile the
+#  Typescript files into Javascript files, I figured it would be worth talking a
+#  bit about files to ignore
+#
+# Obviously `node_modules` is a gooooood call, that's a chunky thing
+#
+# But what about `encoded.txt` and `decoded.txt`? 
+#
+#   Having a sample input (`input.txt`) is great, people will just want to see
+#    that the darn thing works :P
+#
+#   But people are lazy and won't manually check the contents of `encoded.txt`
+#    to see if their run matches, and they certainly won't run it again to test
+#    that the second output matches the original and the contents of
+#    `decoded.txt`
+#
+#   Either provide them some *automated* way of checking this, thus justifying
+#    the inclusion of the files in the repo... or ignore them (which at this
+#    stage will require a `git rm --cached` as git is already tracking them)
+cypher.js
